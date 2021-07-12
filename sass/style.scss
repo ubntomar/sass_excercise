@@ -2,37 +2,46 @@ $color:rgb(0, 0, 0);
 
 body {
     margin: 0px;
-    background-color: $color;
+    //background-color: $color;
 }
 
 .main {
     margin: 0px;
-
+    font-family: 'Roboto', sans-serif; 
     color: white;
     padding: 20px;
 
     .content {
         width: 50%;
         margin: 0 auto;
-
         .card {
-            background-color: rgba($color: #090f06, $alpha: 0.3);
+            background-color: rgba($color: #090f06, $alpha: 0.9);
             padding: 20px;
-
+            .card-info { 
+                background-color: rgb(42, 86, 153);
+                padding: 10px;
+                text-align: center;
+                h1,
+                h3 {
+                    margin: 0;
+                }
+            }
             .card-head {
                 text-align: center;
             }
-
+            
             .card-body {
                 .item {
                     display: flex;
-                    justify-content: space-around;
-
+                    justify-content: space-between;
                     &_description {
-                        &__logo {
-                            background-image: url("../css/dist/img/B-Colombia.png");
-                            width: 150px;
-                            height: 150px;
+                        display: flex;
+                        &__logo img{
+                            width: 100px;
+                            height: 50px;
+                            background-size: cover;
+                            border: 5px red ;
+                            margin: 10px;
                         }
                     }
                 }
@@ -42,7 +51,6 @@ body {
                 background-color: rgb(240, 13, 62);
                 padding: 10px;
                 text-align: center;
-
                 h1,
                 h3 {
                     margin: 0;

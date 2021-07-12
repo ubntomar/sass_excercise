@@ -1,10 +1,10 @@
 body {
   margin: 0px;
-  background-color: black;
 }
 
 .main {
   margin: 0px;
+  font-family: 'Roboto', sans-serif;
   color: white;
   padding: 20px;
 }
@@ -15,8 +15,19 @@ body {
 }
 
 .main .content .card {
-  background-color: rgba(9, 15, 6, 0.3);
+  background-color: rgba(9, 15, 6, 0.9);
   padding: 20px;
+}
+
+.main .content .card .card-info {
+  background-color: #2a5699;
+  padding: 10px;
+  text-align: center;
+}
+
+.main .content .card .card-info h1,
+.main .content .card .card-info h3 {
+  margin: 0;
 }
 
 .main .content .card .card-head {
@@ -25,13 +36,19 @@ body {
 
 .main .content .card .card-body .item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.main .content .card .card-body .item_description__logo {
-  background-image: url("../css/dist/img/B-Colombia.png");
-  width: 150px;
-  height: 150px;
+.main .content .card .card-body .item_description {
+  display: flex;
+}
+
+.main .content .card .card-body .item_description__logo img {
+  width: 100px;
+  height: 50px;
+  background-size: cover;
+  border: 5px red;
+  margin: 10px;
 }
 
 .main .content .card .card-foot {
