@@ -1,3 +1,46 @@
+body {
+  margin: 0px;
+  background-color: black;
+}
+
 .main {
-  background-color: red;
+  margin: 0px;
+  color: white;
+  padding: 20px;
+}
+
+.main .content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main .content .card {
+  background-color: rgba(9, 15, 6, 0.3);
+  padding: 20px;
+}
+
+.main .content .card .card-head {
+  text-align: center;
+}
+
+.main .content .card .card-body .item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .content .card .card-body .item_description__logo {
+  background-image: url("../css/dist/img/B-Colombia.png");
+  width: 150px;
+  height: 150px;
+}
+
+.main .content .card .card-foot {
+  background-color: #f00d3e;
+  padding: 10px;
+  text-align: center;
+}
+
+.main .content .card .card-foot h1,
+.main .content .card .card-foot h3 {
+  margin: 0;
 }
